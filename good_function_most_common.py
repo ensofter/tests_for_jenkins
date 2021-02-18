@@ -1,9 +1,11 @@
 import requests
 
-def most_common_word_on_web_page(words, url):
-    response = requests.get(url)
+
+def most_common_word_on_web_page(words, url, user_agent=requests):
+    response = user_agent.get(url)
     text = response.text
     return most_common_word(words, text)
+
 
 def most_common_word(words, text):
     word_frequency = {w: text.count(w) for w in words}
