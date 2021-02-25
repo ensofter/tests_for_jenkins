@@ -23,15 +23,15 @@ def test_search_exception_not_found():
         with raises(ValueError):
             binar_search(-1, [2, 3, 4, 5])
 
-    with raises(ValueError):
-        with step("-->Проверяем исключение"):
-            binar_search(1, [2, 3, 4, 5])
+        with raises(ValueError):
+            with step("-->Проверяем исключение"):
+                binar_search(1, [2, 3, 4, 5])
 
-    with raises(ValueError):
-        with step("-->Проверяем исключение"):
-            binar_search(5, [1, 2, 3, 4])
+        with raises(ValueError):
+            with step("-->Проверяем исключение"):
+                binar_search(5, [1, 2, 3, 4])
 
-    with raises(ValueError):
-        with step("-->Проверяем исключение"):
-            binar_search(3, [1, 2, 4, 5])
+        with raises(ValueError):
+            with step("-->Проверяем исключение"):
+                binar_search(3, [1, 2, 4, 5])
 

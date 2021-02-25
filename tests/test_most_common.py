@@ -23,10 +23,10 @@ def test_most_common_word():
         assert most_common_word(['a', 'b', 'c'], 'abbbcc') == 'b', 'most common in one string'
 
 
-def test_most_common_word_empty_candidate():
-    with step("-->Тест с пустой строкой"):
-        with raises(Exception, message='empty word raises'):
-            most_common_word([], 'abc')
+# def test_most_common_word_empty_candidate():
+#     with step("-->Тест с пустой строкой"):
+#         with raises(Exception, message='empty word raises'):
+#             most_common_word([], 'abc')
 
 
 def test_most_common_ambiguous_result():
